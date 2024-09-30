@@ -15,6 +15,7 @@ const JWT_SECRET = 'your_jwt_secret_key';
 
 // Kullanıcı Kaydı
 app.get('/', (req, res) => {
+  console.log('Geldi...');
   res.json({ message: 'Welcome to the API!' });
 });
 
