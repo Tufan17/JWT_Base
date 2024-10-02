@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the API!' });
 });
 
+app.get('/login', (req, res) => {
+  console.log('Geldi...');
+  res.json({ message: 'Welcome to login page.' });
+});
+
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
 
